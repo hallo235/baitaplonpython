@@ -1,0 +1,21 @@
+<input type="text" id="genreInput" placeholder="Nhập thể loại...">
+<input type="text" id="keywordInput" placeholder="Nhập từ khóa (cách nhau bởi dấu phẩy)...">
+<input type="number" id="storyIdInput" placeholder="ID truyện mẫu...">
+<button onclick="fetchHybridRecommendations()">Gợi ý truyện</button>
+
+<script>
+function fetchHybridRecommendations() {
+    let genre = document.getElementById("genreInput").value;
+    let keywords = document.getElementById("keywordInput").value;
+    let storyId = document.getElementById("storyIdInput").value;
+
+    let query = "/recommend?";
+    if (genre) query += `genre=${genre}&`;
+    if (keywords) query += `keywords=${keywords}&`;
+    if (storyId) query += `story_id=${storyId}&`;
+
+    fetch(query)
+        .then(response => response.json())
+        .then(data => console.log("Gợi ý truyện:", data));
+}
+</script>

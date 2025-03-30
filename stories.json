@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Cô bé quàng khăn đỏ",
+    "author": "Anh em Grimm",
+    "genre": "Truyện cổ tích",
+    "content": "Ngày xửa ngày xưa...",
+    "keywords": ["cô bé", "sói", "bà ngoại"],
+    "popularity": 9.5
+  },
+  {
+    "id": 2,
+    "title": "Ba chú heo con",
+    "author": "Anh em Grimm",
+    "genre": "Truyện cổ tích",
+    "content": "Ba chú heo...",
+    "keywords": ["heo", "sói", "nhà"],
+    "popularity": 8.7
+  }
+]
